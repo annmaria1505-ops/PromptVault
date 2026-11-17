@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PromptVault - AI Prompt Library</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">PromptVault</h2>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#prompts">Prompts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <h1>Discover Better AI Prompts</h1>
+
+        <p>
+            Explore, learn and reuse carefully designed prompts
+            to get better results from AI tools.
+        </p>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for prompts..."
+        >
+
+    </section>
+
+   <div class="category-card" data-filter="education">
+    <h3>Education</h3>
+</div>
+
+<div class="category-card" data-filter="coding">
+    <h3>Coding</h3>
+</div>
+
+<div class="category-card" data-filter="career">
+    <h3>Career</h3>
+</div>
+
+<div class="category-card" data-filter="writing">
+    <h3>Writing</h3>
+</div>
+   
+<!-- Prompt Collection -->
+<section class="prompts" id="prompts">
+
+    <h2>Explore Our Prompt Collection</h2>
+
+    <p class="section-description">
+        Discover useful prompts designed to improve your AI experience.
+    </p>
+
+    <div class="prompt-container">
+
+        <!-- Education Prompts -->
+
+        <div class="prompt-card" data-category="education">
+
+            <span class="prompt-tag">Role-Based Prompting</span>
+
+            <h3>Study Assistant</h3>
+
+            <p class="prompt-description">
+                Helps students understand difficult topics easily.
+            </p>
+
+            <p class="prompt-text">
+                Act as an experienced teacher. Explain the topic
+                [Enter Topic] in simple English. Include a definition,
+                important points and real-life examples.
+            </p>
+
+            <button class="copy-btn">Copy Prompt</button>
+
+        </div>
+
+
+        <div class="prompt-card" data-category="education">
+
+            <span class="prompt-tag">Zero-Shot Prompting</span>
+
+            <h3>Quiz Generator</h3>
+
+            <p class="prompt-description">
+                Generates multiple-choice questions for practice.
+            </p>
+
+            <p class="prompt-text">
+                Generate 10 multiple-choice questions about
+                [Enter Topic]. Provide four options for each question
+                and show the correct answers at the end.
+            </p>
+
+            <button class="copy-btn">Copy Prompt</button>
+
+        </div>
+
+
+        <!-- Coding Prompts -->
+
+        <div class="prompt-card" data-category="coding">
+
+            <span class="prompt-tag">Role-Based Prompting</span>
+
+            <h3>Code Explainer</h3>
+
+            <p class="prompt-description">
+                Understand programming code step by step.
+            </p>
+
+            <p class="prompt-text">
+                Act as a programming tutor. Explain the following
+                code line by line using simple language.
+                Include an example to make it easier to understand.
+                [Paste Code Here]
+            </p>
+
+            <button class="copy-btn">Copy Prompt</button>
+
+        </div>
+
+
+        <div class="prompt-card" data-category="coding">
+
+            <span class="prompt-tag">Contextual Prompting</span>
+
+            <h3>Debugging Assistant</h3>
+
+            <p class="prompt-description">
+                Helps identify and understand programming errors.
+            </p>
+
+            <p class="prompt-text">
+                I am using [Programming Language].
+                My code produces the following error: [Enter Error].
+                Identify the possible cause and suggest a simple solution.
+            </p>
+
+            <button class="copy-btn">Copy Prompt</button>
+
+        </div>
+
+
+        <!-- Career Prompts -->
+
+        <div class="prompt-card" data-category="career">
+
+            <span class="prompt-tag">Contextual Prompting</span>
+
+            <h3>Resume Improver</h3>
+
+            <p class="prompt-description">
+                Improves resume descriptions and professional language.
+            </p>
+
+            <p class="prompt-text">
+                Act as a professional resume writer.
+                Improve the following resume content for a
+                fresher applying for [Job Role].
+                Use professional language without adding false information.
+                [Enter Content]
+            </p>
+
+            <button class="copy-btn">Copy Prompt</button>
+
+        </div>
+
+
+        <div class="prompt-card" data-category="career">
+
+            <span class="prompt-tag">Role-Based Prompting</span>
+
+            <h3>Interview Coach</h3>
+
+            <p class="prompt-description">
+                Helps users prepare for job interviews.
+            </p>
+
+            <p class="prompt-text">
+                Act as an interviewer for a [Job Role] position.
+                Ask me five beginner-level interview questions
+                one at a time and provide feedback on my answers.
+            </p>
+
+            <button class="copy-btn">Copy Prompt</button>
+
+        </div>
+
+
+        <!-- Writing Prompts -->
+
+        <div class="prompt-card" data-category="writing">
+
+            <span class="prompt-tag">Few-Shot Prompting</span>
+
+            <h3>Email Writer</h3>
+
+            <p class="prompt-description">
+                Creates professional emails based on examples.
+            </p>
+
+            <p class="prompt-text">
+    Follow these examples of formal email writing:
+
+    Example 1: "Dear Sir, I request leave for one day."
+
+    Example 2: "Respected Madam, I would like to
+    request permission to attend the event."
+
+    Now write a formal email about [Enter Purpose].
+    Follow a similar writing style and keep it concise.
+</p>
+            <button class="copy-btn">Copy Prompt</button>
+
+        </div>
+
+
+        <div class="prompt-card" data-category="writing">
+
+            <span class="prompt-tag">Zero-Shot Prompting</span>
+
+            <h3>Content Creator</h3>
+
+            <p class="prompt-description">
+                Generates creative content for social media.
+            </p>
+
+            <p class="prompt-text">
+                Write an engaging social media post about
+                [Enter Topic]. Use simple language, an attractive
+                opening sentence and relevant hashtags.
+            </p>
+
+            <button class="copy-btn">Copy Prompt</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 PromptVault | AI Prompt Library</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
